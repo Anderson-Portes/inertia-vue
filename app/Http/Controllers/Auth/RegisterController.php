@@ -16,9 +16,7 @@ class RegisterController extends Controller
      */
     public function index()
     {
-        return inertia('Auth/Register', [
-            'csrf' => csrf_token()
-        ]);
+        return inertia('Auth/Register');
     }
 
     /**
